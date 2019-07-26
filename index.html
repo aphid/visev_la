@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <pre style="white-space: break-spaces">
+{
+    "title": "oversight machines: translucent operations of making sense",
+    "short": "oversight machines"
+    "presenter": {
+        "name": "abram stern (aphid)",
+        "email": "a@aphid.org",
+        "website": "aphid.org"
+    }</pre>
+
+            </section>
+
+
+
+            <section>
+                <a href="https://www.intelligence.senate.gov/hearings/"><img src="closedhearings.png"> </a> </section>
+
+            <section>
+                <a
+                    href="https://www.intelligence.senate.gov/hearings/open-hearing-nomination-dr-christopher-scolese-be-director-national-reconnaissance-office">
+                    <img src="a_hearing.png"></a>
+            </section>
+
+            <section><a href="https://oversightmachin.es/oversee/data/data.json"><img src="hearingjson.png"></a>
+            </section>
+
+            <section><a href="https://oversightmachin.es/oversee/"><img src="scraper.png"></a></section>
+
+
+            <section><a href="https://oversightmachin.es/smallest-procedural-utterance/"><img
+                        src="haspel_hearing.png"></a>
+            </section>
+
+            <section><a href="https://oversightmachin.es/overhearing/"><img src="overhearing.png"></a>
+            </section>
+
+
+            <section><a
+                    href="https://illegible.us/ssci/media/text/170112_1000_questionnaire-011217/170112_1000_questionnaire-011217-1.jpg"><img
+                        src="pompeogrit.png"></a></section>
+
+            <section><a href="https://oversightmachin.es/ocr/?document=180509_0930_q-ghaspel-050918&page=0"><img
+                        src="ocr.png"></a></section>
+
+
+            <section><a
+                    href=" https://twitter.com/search?q=(from%3Afbirecordsvault)%20since%3A2015-10-29%20until%3A2016-10-31&src=typed_query"><img
+                        src="Screenshot_2019-05-17 FBI Records Vault on Twitter Protests in Baltimore, Maryland, 2015 Documents and video related to pro[...].png"></a>
+            </section>
+
+
+            <section>
+                <a
+                    href="https://vault.fbi.gov/protests-in-baltimore-maryland-2015/videos-of-protests-in-baltimore-maryland-2015">
+                    <img src="fbi_edited.png">
+                </a></section>
+
+            <section>
+                <a href="https://oversightmachin.es/unburn"><img src="unburning.png"></a>
+            </section>
+
+            <section>
+                <a href="https://oversightmachin.es/unburn/difference.html"><img src="difference.png"></a>
+            </section>
+
+            <section>
+                <a href="https://aphid.org/pp_unburn/wescam15.webm"><img src="wescam15.jpg"></a>
+            </section>
+            <section>
+                <a href="https://oversightmachin.es/baltimore/1D3001Part1.mp4.json"><img src="metadata.png"></a>
+
+            </section>
+            <section>
+                thank you
+
+            </section>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="js/reveal.js"></script>
+    <script>
+        Reveal.initialize();
+
+        var time = document.querySelector("#timestamp");
+        for (let a of document.querySelectorAll('a')) {
+            a.target = "_blank";
+        }
+        for (let v of document.querySelectorAll('video')) {
+            console.log(v);
+            v.addEventListener("timeupdate", function () {
+                console.log(v.dataset.end, v.currentTime);
+                if (v.currentTime > v.dataset.end) {
+                    v.pause();
+                }
+            });
+        }
+
+    </script>
+</body>
+
+</html>
